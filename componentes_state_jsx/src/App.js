@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+
+const Avatar = (props) => {
+  const src = `https://randomuser.me/api/portraits/women/${props.id}.jpg`;
+  return (<picture> 
+  <img alt="Imagen de avatar" src= {src} />
+  {props.name}
+  </picture>
+   )
+  
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Woman in Tech</h1>
+      <Avatar id="1" name="Julia" />    
+      <Avatar id="2" name="Paca" />    
+      <Avatar id="3" name="Manuela" />    
     </div>
   );
 }

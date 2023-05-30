@@ -24,6 +24,18 @@
   color: white;
 }
 
+picture{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100px;
+}
+
+img {
+  box-shadow: 0 0 15px rgb(157, 157, 235);
+  border-radius: 50%;
+  width: 100px;
+}
 .App-link {
   color: #61dafb;
 }
